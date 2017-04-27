@@ -60,6 +60,7 @@
 		}
 
 		> span {
+			-webkit-transform: translateY( 0 );
 			transform: translateY( 0 );
 			overflow: hidden;
 			float: left;
@@ -69,6 +70,7 @@
 			}
 			
 			> span {
+				-webkit-transform: translateY( 100% );
 				transform: translateY( 100% );
 			}
 
@@ -154,9 +156,11 @@
 			visibility: visible;
 
 			> span {
+				-webkit-transform: translateY( 0 );
 				transform: translateY( 0 );
 
 				> span {
+					-webkit-transform: translateY( 0 );
 					transform: translateY( 0 );
 				}
 
