@@ -1,4 +1,4 @@
-@keyframes wipe {
+@-webkit-keyframes wipe {
     0%   {
     	left: -100%;
     }
@@ -13,7 +13,31 @@
     }
 }
 
-@keyframes appear {
+@-webkit-keyframes wipe {
+    0%   {
+    	left: -100%;
+    }
+    33%  {
+    	left: 0;
+    }
+    66%  {
+    	left: 0;
+    }
+    100% {
+    	left: 100%;
+    }
+}
+
+@-webkit-keyframes appear {
+    from   {
+    	visibility: hidden;
+    }
+    to {
+    	visibility: visible;
+    }   
+}
+
+@-webkit-keyframes appear {
     from   {
     	visibility: hidden;
     }
@@ -178,8 +202,11 @@
 			}
 
 			&:after {
+				-webkit-animation-name: wipe;
 				animation-name: wipe;
+				-webkit-animation-duration: 1s;
 				animation-duration: 1s;
+				-webkit-animation-delay: 1s;
 				animation-delay: 1s;
 			}
 
