@@ -1,3 +1,9 @@
+@import '../../node_modules/bulma/sass/utilities/all',
+		'../../node_modules/bulma/sass/base/helpers',
+		'../../node_modules/bulma/sass/elements/form',
+		'../../node_modules/bulma/sass/grid/all',
+		'../../node_modules/bulma/sass/components/modal';
+
 @import 'base/base', 
 		'base/layout',
 		'base/forms', 
@@ -5,4 +11,6 @@
 
 @import 'components/splash', 
 		'components/mailchimp', 
+		'components/buttons',
+		'components/modals',
 		'components/content';
