@@ -9226,3 +9226,12 @@ iframe.uk-cover {
 
 .work-item__title a:after {
   content: ' ⟶'; }
+
+.form__success {
+  display: none; }
+
+.form--success .form__fields {
+  display: none; }
+
+.form--success .form__success {
+  display: block; }

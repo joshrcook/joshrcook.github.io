@@ -12020,6 +12020,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   // set the subnav li's to autoscroll to their respective links
   _uikit2.default.scroll('.js-subnav a');
 })();
+
+// Handle form submissions
+(function () {
+  // Don't allow redirects on form submissions please
+  document.addEventListener('submit', function (e) {
+    e.preventDefault();
+  });
+
+  document.querySelector('.joshrcook-website-contact').addEventListener('submit', function (e) {
+    this.classList.add('form--success');
+  });
+})();
 },{"uikit":"node_modules/uikit/dist/js/uikit.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -12049,7 +12061,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55130' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57697' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
